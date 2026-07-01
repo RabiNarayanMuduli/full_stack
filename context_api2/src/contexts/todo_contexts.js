@@ -1,5 +1,4 @@
 import {createContext, useContext} from "react"
-
 // 1. Create the Context. This acts as the "Blueprint" or central store.
 // We pass in default values so React knows the shape of the data we expect to share.
 export const TodoContext = createContext({
@@ -28,4 +27,4 @@ export const useTodo = () => {
 // 3. Export the Provider. 
 // We will wrap our main application with this Provider in App.jsx
 // so that all components inside can access the Context data.
-export const TodoProvider = TodoContext.Provider
+export const TodoProvider = TodoContext.Provider 
